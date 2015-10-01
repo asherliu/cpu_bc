@@ -50,10 +50,8 @@ int main( int args, char **argv)
 			if(g->beg_pos[i]==g->beg_pos[i+1])continue;
 			bc_inst->init_traverse();	
 			depth_t tdepth=bc_inst->bfs_sssp(i);
-			if(i==150) printf("depth-count: %ld",tdepth);
 			bc_inst->compute_bc(i,tdepth);
 		}
-		sleep(10);
 		
 		for(index_t i=0;i<g->vert_count;++i)
 		{
