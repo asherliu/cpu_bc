@@ -1,4 +1,4 @@
-# Betweeenness centrality (BC) on CPU
+# Betweenness centrality (BC) on CPU
 
 CPU implementation for BC on weighted graph
 **Contributor**: Hang Liu (asherliu@gwu.edu)
