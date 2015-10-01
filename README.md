@@ -23,9 +23,9 @@ Execution
 Graph Converter 
 -----------------------
 Currently, we support converting a graph from matrix based text format. (credit to Yang Hu)
-- the source code of converter is in ./converter folder
-- compile: **g++ converter.cpp -o converter**
-- execution: **./converter /path/to/matrix_graph.txt (please make sure there is no blanket lines in this file)**
+- Source code of converter is in ./converter folder
+- Compile: **g++ converter.cpp -o converter**
+- Execution: **./converter /path/to/matrix_graph.txt (please make sure there is no blanket lines in this file)**
 - You will get: **beg.bin, csr.bin, weight.bin** and degree.bin. 
 - The former three files are exactly the files required by CPU BC execution
 
