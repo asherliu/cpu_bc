@@ -27,14 +27,11 @@ inline off_t fsize(const char *filename) {
 int main(int argc, char** argv){
 	int fd,i;
 	char* ss;
-
+	
+	std::cout<<"Input: ./exe /path/to/matrix_graph\n";
+	if(argc!=2){std:cout<<"Wrong input\n";exit(1);}
 	size_t file_size = fsize(argv[1]);
-
-
 	fd=open( argv[1],O_CREAT|O_RDWR,00777 );
-
-
-
 	ss = (char*)mmap(NULL,file_size,PROT_READ|PROT_WRITE,MAP_SHARED,fd,0);
 
 	size_t curr=0;
